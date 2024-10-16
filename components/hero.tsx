@@ -22,7 +22,7 @@ const Hero = () => {
   );
 };
 
-const Heart = () => {
+export const Heart = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

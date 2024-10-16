@@ -2,7 +2,7 @@ import React from 'react'
 
 const Types = () => {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-start font-semibold gap-[23px]'>
       <a href="#">Women's Fashion</a>
       <a href="#">Men's Fashion</a>
       <a href="#">Electronics</a>
