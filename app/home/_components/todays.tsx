@@ -121,7 +121,7 @@ const Todays = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center pt-5">
         <button className="bg-[#db4444] text-white w-[234px] h-[56px] rounded">
           View All Products
         </button>
