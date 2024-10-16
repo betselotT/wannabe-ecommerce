@@ -1,8 +1,33 @@
-import React from "react";
+'use client'
+import React, { useRef } from "react";
 import Image from "next/image";
 import FlashSales from "./flash-sales";
+import LeftArrow from "@/public/icons/left-arrow";
+import RightArrow from "@/public/icons/right-arrow";
+import { sales } from "@/constants/sales";
 
 const Todays = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: -500, // Adjust this value based on card width
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Function to scroll right
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: 500, // Adjust this value based on card width
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div>
       <div className="flex justify-start items-center gap-5">
@@ -62,55 +87,41 @@ const Todays = () => {
             </div>
           </div>
           <div className="flex justify-center items-center gap-2 ml-52">
-            <div className="border bg-gray-200 rounded-3xl p-2 cursor-pointer">
+            <div
+              className="border bg-gray-200 rounded-3xl p-2 cursor-pointer"
+              onClick={scrollLeft}
+            >
               <LeftArrow />
             </div>
-            <div className="border bg-gray-200 rounded-3xl p-2 cursor-pointer">
+            <div
+              className="border bg-gray-200 rounded-3xl p-2 cursor-pointer"
+              onClick={scrollRight}
+            >
               <RightArrow />
             </div>
           </div>
         </div>
       </div>
-      <FlashSales />
+      <div className="pt-8">
+        <div
+          ref={scrollRef} // Reference to the scrollable div
+          className="flex gap-12 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
+          style={{ scrollBehavior: "smooth" }}
+        >
+          {sales.map((item, index) => (
+            <FlashSales
+              key={index}
+              discount={item.discount}
+              image={item.image}
+              name={item.name}
+              currPrice={item.currPrice}
+              prevPrice={item.prevPrice}
+              rating={item.rating}
+            />
+          ))}
+        </div>
+      </div>
     </div>
-  );
-};
-
-const LeftArrow = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      className="size-6"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-      />
-    </svg>
-  );
-};
-
-const RightArrow = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      className="size-6"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-      />
-    </svg>
   );
 };
 
