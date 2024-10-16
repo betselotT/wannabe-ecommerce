@@ -22,10 +22,10 @@ const FlashSales: React.FC<FlashSalesTypes> = ({
               <p className="text-white text-xs text-center p-1">{discount}</p>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="bg-white rounded-3xl p-2">
+              <div className="bg-white rounded-3xl p-2 cursor-pointer">
                 <Heart />
               </div>
-              <div className="bg-white rounded-3xl p-2">
+              <div className="bg-white rounded-3xl p-2 cursor-pointer">
                 <View />
               </div>
             </div>

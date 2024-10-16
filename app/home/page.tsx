@@ -4,6 +4,8 @@ import React from "react";
 import Types from "./_components/types";
 import Image from "next/image";
 import Todays from "./_components/todays";
+import Categories from "./_components/categories";
+import ThisMonth from "./_components/this-month";
 
 const Home = () => {
   return (
@@ -29,6 +31,19 @@ const Home = () => {
       {/* Today's */}
       <div className="ml-36 mt-36">
         <Todays />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* Categories */}
+      <div className="ml-36">
+        <Categories />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* This Month */}
+      <div className="ml-36">
+        <ThisMonth />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
       </div>
     </div>
   );

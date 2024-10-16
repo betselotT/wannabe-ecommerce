@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useRef } from "react";
 import Image from "next/image";
 import FlashSales from "./flash-sales";
@@ -12,7 +12,7 @@ const Todays = () => {
   const scrollLeft = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: -500, // Adjust this value based on card width
+        left: -500,
         behavior: "smooth",
       });
     }
@@ -22,7 +22,7 @@ const Todays = () => {
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: 500, // Adjust this value based on card width
+        left: 500,
         behavior: "smooth",
       });
     }
@@ -104,7 +104,7 @@ const Todays = () => {
       </div>
       <div className="pt-8">
         <div
-          ref={scrollRef} // Reference to the scrollable div
+          ref={scrollRef}
           className="flex gap-12 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
           style={{ scrollBehavior: "smooth" }}
         >
@@ -120,6 +120,11 @@ const Todays = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="flex justify-center items-center">
+        <button className="bg-[#db4444] text-white w-[234px] h-[56px] rounded">
+          View All Products
+        </button>
       </div>
     </div>
   );

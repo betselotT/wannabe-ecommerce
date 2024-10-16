@@ -8,7 +8,7 @@ export const sales = [
     rating: 88,
   },
   {
-    discount: "-40%",
+    discount: "-35%",
     image: "/images/keyboard.png",
     name: "AK-900 Wired Keyboard",
     currPrice: "$960",
@@ -16,7 +16,7 @@ export const sales = [
     rating: 75,
   },
   {
-    discount: "-40%",
+    discount: "-30%",
     image: "/images/monitor.png",
     name: "IPS LCD Gaming Monitor",
     currPrice: "$370",
@@ -24,7 +24,7 @@ export const sales = [
     rating: 99,
   },
   {
-    discount: "-40%",
+    discount: "-25%",
     image: "/images/chair.png",
     name: "S-Series Comfort Chair",
     currPrice: "$375",
@@ -32,7 +32,7 @@ export const sales = [
     rating: 99,
   },
   {
-    discount: "-40%",
+    discount: "-25%",
     image: "/images/gamepad.png",
     name: "HAVIT HV-G92 Gamepad",
     currPrice: "$120",
