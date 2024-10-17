@@ -1,5 +1,5 @@
-import Heart from "@/public/icons/heart";
-import View from "@/public/icons/view";
+import Heart from "@/components/icons/heart";
+import View from "@/components/icons/view";
 import { SellingTypes } from "@/types";
 import Image from "next/image";
 import React from "react";
@@ -12,8 +12,9 @@ const Selling: React.FC<SellingTypes> = ({
   prevPrice,
   rating,
 }) => {
-  return <div>
-    <div className="h-[350px]">
+  return (
+    <div>
+      <div className="h-[350px]">
         <div className="bg-[#f5f5f5] w-[270px] h-[230px] relative">
           <div className="flex justify-between pt-3 px-3">
             <div className="w-12 h-6 rounded">
@@ -53,7 +54,8 @@ const Selling: React.FC<SellingTypes> = ({
           <p className="text-[#c3bfbf]">({rating})</p>
         </div>
       </div>
-  </div>;
+    </div>
+  );
 };
 
 export default Selling;

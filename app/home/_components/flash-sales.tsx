@@ -1,7 +1,7 @@
 import React from "react";
-import View from "@/public/icons/view";
+import View from "@/components/icons/view";
 import { FaStar } from "react-icons/fa";
-import Heart from "@/public/icons/heart";
+import Heart from "@/components/icons/heart";
 import Image from "next/image";
 import { FlashSalesTypes } from "@/types";
 

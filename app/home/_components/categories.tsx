@@ -1,7 +1,7 @@
 "use client";
 import { categories } from "@/constants/categories";
-import LeftArrow from "@/public/icons/left-arrow";
-import RightArrow from "@/public/icons/right-arrow";
+import LeftArrow from "@/components/icons/left-arrow";
+import RightArrow from "@/components/icons/right-arrow";
 import Image from "next/image";
 import React, { useRef } from "react";
 import Browse from "./browse";

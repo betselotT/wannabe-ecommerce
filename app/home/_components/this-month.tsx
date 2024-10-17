@@ -38,19 +38,6 @@ const ThisMonth = () => {
           ))}
         </div>
       </div>
-      <div>
-        <Image
-          src="/images/ad.png"
-          width={1270}
-          height={500}
-          alt="Picture of an AD"
-        />
-        <div className="flex justify-center items-center pt-5">
-          <button className="bg-[#00ff66] text-white w-[170px] h-[56px] rounded">
-            Buy Now!
-          </button>
-        </div>
-      </div>
     </div>
   );
 };

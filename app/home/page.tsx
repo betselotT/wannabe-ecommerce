@@ -6,6 +6,8 @@ import Image from "next/image";
 import Todays from "./_components/todays";
 import Categories from "./_components/categories";
 import ThisMonth from "./_components/this-month";
+import Ad from "./_components/ad";
+import Products from "./_components/products";
 
 const Home = () => {
   return (
@@ -41,8 +43,18 @@ const Home = () => {
       </div>
 
       {/* This Month */}
-      <div className="ml-36">
+      <div className="ml-36 mb-10">
         <ThisMonth />
+      </div>
+
+      {/* AD */}
+      <div className="ml-36">
+        <Ad />
+      </div>
+
+      {/* Our Products */}
+      <div className="ml-36 mt-20">
+        <Products />
         <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
       </div>
     </div>
