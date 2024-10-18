@@ -5,6 +5,8 @@ import FlashSales from "./flash-sales";
 import LeftArrow from "@/components/icons/left-arrow";
 import RightArrow from "@/components/icons/right-arrow";
 import { sales } from "@/constants/sales";
+import { explore } from "@/constants/explore";
+import Explore from "./explore";
 
 const Todays = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -60,18 +62,15 @@ const Todays = () => {
       </div>
       <div className="pt-8">
         <div
-          ref={scrollRef}
-          className="flex gap-12 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
+          className="grid grid-cols-4 gap-8 w-[94%] overflow-x-auto hide-scrollbar"
           style={{ scrollBehavior: "smooth" }}
         >
-          {sales.map((item, index) => (
-            <FlashSales
+          {explore.map((item, index) => (
+            <Explore
               key={index}
-              discount={item.discount}
               image={item.image}
               name={item.name}
               currPrice={item.currPrice}
-              prevPrice={item.prevPrice}
               rating={item.rating}
             />
           ))}

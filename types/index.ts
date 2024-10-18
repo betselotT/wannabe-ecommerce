@@ -19,3 +19,10 @@ export type SellingTypes = {
   prevPrice: string;
   rating: number;
 };
+
+export type ExploreTypes = {
+  image: string;
+  name: string;
+  currPrice: string;
+  rating: number;
+}
