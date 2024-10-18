@@ -8,6 +8,7 @@ import Categories from "./_components/categories";
 import ThisMonth from "./_components/this-month";
 import Ad from "./_components/ad";
 import Products from "./_components/products";
+import Featured from "./_components/featured";
 
 const Home = () => {
   return (
@@ -55,6 +56,24 @@ const Home = () => {
       {/* Our Products */}
       <div className="ml-36 mt-20">
         <Products />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* Featured */}
+      <div className="ml-36 mt-20">
+        <Featured />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* Mini Footer */}
+      <div className="ml-36 mt-20">
+        <Featured />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* Footer */}
+      <div className="ml-36 mt-20">
+        <Featured />
         <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
       </div>
     </div>
