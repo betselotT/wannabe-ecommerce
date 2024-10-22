@@ -76,7 +76,6 @@ const Home = () => {
       {/* Footer */}
       <div className="mt-20">
         <Footer />
-        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
       </div>
     </div>
   );
