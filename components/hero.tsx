@@ -1,17 +1,48 @@
+"use client";
 import Cart from "@/components/icons/cart";
 import Heart from "@/components/icons/heart";
-import React from "react";
+import React, { useState } from "react";
 
 const Hero = () => {
+  const [activeLink, setActiveLink] = useState<string>("");
+
+  const handleClick = (link: string) => {
+    setActiveLink(link); 
+  };
+
   return (
     <div>
       <div className="flex justify-center items-center gap-56">
         <h1 className="text-2xl font-bold">Exclusive</h1>
         <div className="flex justify-center items-center gap-10">
-          <a href="/home">Home</a>
-          <a href="/contact">Contacts</a>
-          <a href="/about">About Us</a>
-          <a href="#">Sign Up</a>
+          <a
+            href="/home"
+            onClick={() => handleClick("/home")}
+            className={activeLink === "/home" ? "underline" : ""}
+          >
+            Home
+          </a>
+          <a
+            href="/contact"
+            onClick={() => handleClick("/contact")}
+            className={activeLink === "/contact" ? "underline" : ""}
+          >
+            Contacts
+          </a>
+          <a
+            href="/about"
+            onClick={() => handleClick("/about")}
+            className={activeLink === "/about" ? "underline" : ""}
+          >
+            About Us
+          </a>
+          <a
+            href="#"
+            onClick={() => handleClick("#")}
+            className={activeLink === "#" ? "underline" : ""}
+          >
+            Sign Up
+          </a>
         </div>
         <div className="flex justify-center items-center gap-5">
           <input

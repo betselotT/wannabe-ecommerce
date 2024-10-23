@@ -1,3 +1,4 @@
+"use client";
 import Check from "@/components/icons/check";
 import Lorry from "@/components/icons/lorry";
 import Phone from "@/components/icons/phone";
@@ -5,6 +6,13 @@ import UpArrow from "@/components/icons/up-arrow";
 import React from "react";
 
 const MiniFooter = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div className="flex justify-center items-center gap-32">
@@ -43,7 +51,10 @@ const MiniFooter = () => {
         </div>
       </div>
       <div className="flex justify-end mr-32">
-        <div className="border bg-gray-200 rounded-full w-[40px] h-[40px] cursor-pointer flex justify-center items-center mt-16">
+        <div
+          onClick={scrollToTop}
+          className="border bg-gray-200 rounded-full w-[40px] h-[40px] cursor-pointer flex justify-center items-center mt-16"
+        >
           <UpArrow />
         </div>
       </div>
