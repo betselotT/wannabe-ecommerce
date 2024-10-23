@@ -7,7 +7,7 @@ const Hero = () => {
   const [activeLink, setActiveLink] = useState<string>("");
 
   const handleClick = (link: string) => {
-    setActiveLink(link); 
+    setActiveLink(link);
   };
 
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
             onClick={() => handleClick("/about")}
             className={activeLink === "/about" ? "underline" : ""}
           >
-            About Us
+            About
           </a>
           <a
             href="#"
