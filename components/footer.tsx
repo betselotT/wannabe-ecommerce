@@ -14,7 +14,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-3">
           <h3 className="font-semibold text-medium">Support</h3>
-          <p className="w-[175px]">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+          <p className="w-[175px]">
+            111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+          </p>
           <p>exclusive@gmail.com</p>
           <p>+88015-88888-9999</p>
         </div>
@@ -39,6 +41,7 @@ const Footer = () => {
           <div className="flex justify-center items-center gap-3">
             <div>
               <Image
+                className="cursor-pointer"
                 src="/images/qr-code.png"
                 width={76}
                 height={76}
@@ -47,12 +50,14 @@ const Footer = () => {
             </div>
             <div>
               <Image
+                className="cursor-pointer"
                 src="/images/googlePlay.png"
                 width={104}
                 height={30}
                 alt="Picture of the home page"
               />
               <Image
+                className="cursor-pointer"
                 src="/images/appStore.png"
                 width={104}
                 height={30}
@@ -62,7 +67,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-white flex justify-center pt-20">&copy; Copyright Rimel 2022. All right reserved</p>
+      <p className="text-white flex justify-center pt-20">
+        &copy; Copyright Rimel 2022. All right reserved
+      </p>
     </div>
   );
 };

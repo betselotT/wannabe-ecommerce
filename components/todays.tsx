@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import FlashSales from "./flash-sales";
+import FlashSales from "../../../components/flash-sales";
 import LeftArrow from "@/components/icons/left-arrow";
 import RightArrow from "@/components/icons/right-arrow";
 import { sales } from "@/constants/sales";

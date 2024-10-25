@@ -4,7 +4,7 @@ import Phone from "@/components/icons/phone";
 import React from "react";
 import Form from "./_components/form";
 import Mail from "@/components/icons/mail";
-import Footer from "../home/_components/footer";
+import Footer from "../../components/footer";
 
 const Contact = () => {
   return (

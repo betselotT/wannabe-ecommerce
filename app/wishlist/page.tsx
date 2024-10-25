@@ -2,6 +2,8 @@ import Base from "@/components/base";
 import Hero from "@/components/hero";
 import React from "react";
 import JustYou from "./_components/just-you";
+import MiniFooter from "@/components/mini-footer";
+import Footer from "@/components/footer";
 
 const Wishlist = () => {
   return (
@@ -26,6 +28,17 @@ const Wishlist = () => {
       <div className="ml-36 mt-20">
         <JustYou />
         <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* Mini Footer */}
+      <div className="ml-36 mt-20">
+        <MiniFooter />
+        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+      </div>
+
+      {/* Footer */}
+      <div className="mt-20">
+        <Footer />
       </div>
     </div>
   );

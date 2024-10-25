@@ -5,8 +5,8 @@ import React from "react";
 import Front from "./_components/front";
 import Four from "./_components/four";
 import Avatars from "./_components/avatars";
-import MiniFooter from "../home/_components/mini-footer";
-import Footer from "../home/_components/footer";
+import MiniFooter from "../../components/mini-footer";
+import Footer from "../../components/footer";
 import Dots from "./_components/dots";
 
 const About = () => {

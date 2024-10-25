@@ -19,9 +19,9 @@ const Hero = () => {
         <h1 className="text-2xl font-bold">Exclusive</h1>
         <div className="flex justify-center items-center gap-10">
           <a
-            href="/home"
+            href="/"
             className={`border-b-2 ${
-              path === "/home" ? "border-black" : "border-transparent"
+              path === "/" ? "border-[#db4444]" : "border-transparent"
             } pb-0.5`}
           >
             Home
@@ -29,7 +29,7 @@ const Hero = () => {
           <a
             href="/contact"
             className={`border-b-2 ${
-              path === "/contact" ? "border-black" : "border-transparent"
+              path === "/contact" ? "border-[#db4444]" : "border-transparent"
             } pb-0.5`}
           >
             Contacts
@@ -37,7 +37,7 @@ const Hero = () => {
           <a
             href="/about"
             className={`border-b-2 ${
-              path === "/about" ? "border-black" : "border-transparent"
+              path === "/about" ? "border-[#db4444]" : "border-transparent"
             } pb-0.5`}
           >
             About
@@ -45,7 +45,7 @@ const Hero = () => {
           <a
             href="#"
             className={`border-b-2 ${
-              path === "/signup" ? "border-black" : "border-transparent"
+              path === "/signup" ? "border-[#db4444]" : "border-transparent"
             } pb-0.5`}
           >
             Sign Up
@@ -58,9 +58,9 @@ const Hero = () => {
             className="px-2"
           />
           <a
-            href="/home/wishlist"
+            href="/wishlist"
             className={`border-b-2 ${
-              path === "/home/wishlist" ? "border-black" : "border-transparent"
+              path === "/wishlist" ? "border-[#db4444]" : "border-transparent"
             } pb-0.5`}
           >
             <Heart />

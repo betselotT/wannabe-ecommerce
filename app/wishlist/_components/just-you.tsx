@@ -1,7 +1,7 @@
+import Selling from "@/components/selling";
 import { selling } from "@/constants/selling";
 import Image from "next/image";
 import React from "react";
-import Selling from "../../_components/selling";
 
 const JustYou = () => {
   return (
