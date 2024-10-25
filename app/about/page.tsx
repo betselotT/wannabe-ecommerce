@@ -1,6 +1,5 @@
 import Base from "@/components/base";
 import Hero from "@/components/hero";
-import Image from "next/image";
 import React from "react";
 import Front from "./_components/front";
 import Four from "./_components/four";

@@ -1,10 +1,10 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import FlashSales from "../../../components/flash-sales";
 import LeftArrow from "@/components/icons/left-arrow";
 import RightArrow from "@/components/icons/right-arrow";
 import { sales } from "@/constants/sales";
+import FlashSales from "./flash-sales";
 
 const Todays = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -37,7 +37,7 @@ const Todays = () => {
           height={40}
           alt="Picture of the home page"
         />
-        <h1 className="text-[#db4444] font-semibold">Today's</h1>
+        <h1 className="text-[#db4444] font-semibold">Today&apos;s</h1>
       </div>
       <div className="flex items-center gap-24 pt-5">
         <h1 className="text-3xl font-semibold">Flash Sales</h1>

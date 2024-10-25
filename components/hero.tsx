@@ -2,16 +2,11 @@
 import Cart from "@/components/icons/cart";
 import Heart from "@/components/icons/heart";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React from "react";
 import ProfileDropdown from "./profile-dropdown";
 
 const Hero = () => {
-  const [activeLink, setActiveLink] = useState<string>("");
   const path = usePathname();
-
-  const handleClick = (link: string) => {
-    setActiveLink(link);
-  };
 
   return (
     <div>

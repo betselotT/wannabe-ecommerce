@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import LeftArrow from "@/components/icons/left-arrow";
 import RightArrow from "@/components/icons/right-arrow";
-import { sales } from "@/constants/sales";
 import { explore } from "@/constants/explore";
 import Explore from "./explore";
 

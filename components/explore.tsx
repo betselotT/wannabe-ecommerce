@@ -1,6 +1,6 @@
 import Heart from "@/components/icons/heart";
 import View from "@/components/icons/view";
-import { ExploreTypes, SellingTypes } from "@/types";
+import { ExploreTypes } from "@/types";
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
