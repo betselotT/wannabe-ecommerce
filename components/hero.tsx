@@ -57,7 +57,14 @@ const Hero = () => {
             placeholder="What are you looking for?"
             className="px-2"
           />
-          <Heart />
+          <a
+            href="/home/wishlist"
+            className={`border-b-2 ${
+              path === "/home/wishlist" ? "border-black" : "border-transparent"
+            } pb-0.5`}
+          >
+            <Heart />
+          </a>
           <Cart />
           <ProfileDropdown />
         </div>
