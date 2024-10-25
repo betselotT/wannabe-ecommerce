@@ -1,10 +1,13 @@
 "use client";
 import Cart from "@/components/icons/cart";
 import Heart from "@/components/icons/heart";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import ProfileDropdown from "./profile-dropdown";
 
 const Hero = () => {
   const [activeLink, setActiveLink] = useState<string>("");
+  const path = usePathname();
 
   const handleClick = (link: string) => {
     setActiveLink(link);
@@ -17,29 +20,33 @@ const Hero = () => {
         <div className="flex justify-center items-center gap-10">
           <a
             href="/home"
-            onClick={() => handleClick("/home")}
-            className={activeLink === "/home" ? "underline" : ""}
+            className={`border-b-2 ${
+              path === "/home" ? "border-black" : "border-transparent"
+            } pb-0.5`}
           >
             Home
           </a>
           <a
             href="/contact"
-            onClick={() => handleClick("/contact")}
-            className={activeLink === "/contact" ? "underline" : ""}
+            className={`border-b-2 ${
+              path === "/contact" ? "border-black" : "border-transparent"
+            } pb-0.5`}
           >
             Contacts
           </a>
           <a
             href="/about"
-            onClick={() => handleClick("/about")}
-            className={activeLink === "/about" ? "underline" : ""}
+            className={`border-b-2 ${
+              path === "/about" ? "border-black" : "border-transparent"
+            } pb-0.5`}
           >
             About
           </a>
           <a
             href="#"
-            onClick={() => handleClick("#")}
-            className={activeLink === "#" ? "underline" : ""}
+            className={`border-b-2 ${
+              path === "/signup" ? "border-black" : "border-transparent"
+            } pb-0.5`}
           >
             Sign Up
           </a>
@@ -52,6 +59,7 @@ const Hero = () => {
           />
           <Heart />
           <Cart />
+          <ProfileDropdown />
         </div>
       </div>
       <hr className="mt-5" />
