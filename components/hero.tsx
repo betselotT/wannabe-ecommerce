@@ -60,7 +60,14 @@ const Hero = () => {
           >
             <Heart />
           </a>
-          <Cart />
+          <a
+            href="/cart"
+            className={`border-b-2 ${
+              path === "/cart" ? "border-[#db4444]" : "border-transparent"
+            } pb-0.5`}
+          >
+            <Cart />
+          </a>
           <ProfileDropdown />
         </div>
       </div>

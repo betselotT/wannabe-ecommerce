@@ -35,7 +35,7 @@ const Featured = () => {
               className="w-[570px] h-[284px] bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-3 justify-end text-white ml-6 pb-6"
               style={{ backgroundImage: "url('/images/women.png')" }}
             >
-              <p className="font-medium text-xl">Women's Collections</p>
+              <p className="font-medium text-xl">Women&apos;s Collections</p>
               <p className="text-sm w-60 font-light">
                 Featured woman collections that give you another vibe.
               </p>
