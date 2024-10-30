@@ -38,7 +38,7 @@ const Hero = () => {
             About
           </a>
           <a
-            href="#"
+            href="/signup"
             className={`border-b-2 ${
               path === "/signup" ? "border-[#db4444]" : "border-transparent"
             } pb-0.5`}
