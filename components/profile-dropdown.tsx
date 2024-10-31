@@ -34,10 +34,12 @@ function ProfileDropdown() {
           }}
         >
           <ul className="py-1">
-            <li className="flex items-center px-4 py-2 hover:bg-black cursor-pointer">
-              <FaCog className="mr-2" />
-              Manage My Account
-            </li>
+            <a href="/account">
+              <li className="flex items-center px-4 py-2 hover:bg-black cursor-pointer">
+                <FaCog className="mr-2" />
+                Manage My Account
+              </li>
+            </a>
             <li className="flex items-center px-4 py-2 hover:bg-black cursor-pointer">
               <FaShoppingBag className="mr-2" />
               My Order
