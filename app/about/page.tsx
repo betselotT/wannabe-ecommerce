@@ -13,38 +13,42 @@ const About = () => {
     <div>
       {/* Navbar Section */}
       <Base />
+
+      {/* Hero Section */}
       <div className="mt-10">
         <Hero />
       </div>
 
       {/* About Us Section */}
-      <div className="pt-20 pl-36">
+      <div className="pt-20 pl-8 sm:pl-16 md:pl-36">
         <p>
           <span className="text-gray-500">Home /</span>{" "}
           <span className="font-semibold">About</span>
         </p>
       </div>
+
+      {/* Front Section */}
       <Front />
 
-      {/* The four  */}
+      {/* The Four Section */}
       <div className="mt-32">
         <Four />
       </div>
 
-      {/* The avatars  */}
+      {/* The Avatars Section */}
       <div className="mt-32">
         <Avatars />
       </div>
 
-      {/* The dots  */}
+      {/* Dots Section */}
       <div className="mt-8">
         <Dots />
       </div>
 
       {/* Mini Footer */}
-      <div className="ml-36 mt-32">
+      <div className="mt-20">
         <MiniFooter />
-        <hr className="bg-[#dcdfe8] w-[1200px] mt-10 mb-10" />
+        <hr className="bg-[#dcdfe8] w-full sm:w-[600px] md:w-[800px] lg:w-[1200px] mt-10 mb-10 mx-auto" />
       </div>
 
       {/* Footer */}

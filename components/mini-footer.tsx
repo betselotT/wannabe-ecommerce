@@ -14,9 +14,11 @@ const MiniFooter = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-center items-center gap-32">
-        <div className="flex flex-col gap-3">
+    <div className="px-4">
+      {/* Features Section */}
+      <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-32">
+        {/* Feature 1 */}
+        <div className="flex flex-col items-center text-center gap-3 w-[250px]">
           <div className="flex justify-center items-center">
             <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
               <div className="flex justify-center items-center bg-black rounded-full w-[50px] h-[50px]">
@@ -24,10 +26,16 @@ const MiniFooter = () => {
               </div>
             </div>
           </div>
-          <h1 className="font-bold text-xl">FREE AND FAST DELIVERY</h1>
-          <p className="text-sm">Free delivery for all orders over $140</p>
+          <h1 className="font-bold text-lg lg:text-xl">
+            FREE AND FAST DELIVERY
+          </h1>
+          <p className="text-sm text-gray-600">
+            Free delivery for all orders over $140
+          </p>
         </div>
-        <div className="flex flex-col gap-3">
+
+        {/* Feature 2 */}
+        <div className="flex flex-col items-center text-center gap-3 w-[250px]">
           <div className="flex justify-center items-center">
             <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
               <div className="flex justify-center items-center bg-black rounded-full w-[50px] h-[50px]">
@@ -35,10 +43,16 @@ const MiniFooter = () => {
               </div>
             </div>
           </div>
-          <h1 className="font-bold text-xl">24/7 CUSTOMER SERVICE</h1>
-          <p className="text-sm">Friendly 24/7 customer support</p>
+          <h1 className="font-bold text-lg lg:text-xl">
+            24/7 CUSTOMER SERVICE
+          </h1>
+          <p className="text-sm text-gray-600">
+            Friendly 24/7 customer support
+          </p>
         </div>
-        <div className="flex flex-col gap-3">
+
+        {/* Feature 3 */}
+        <div className="flex flex-col items-center text-center gap-3 w-[250px]">
           <div className="flex justify-center items-center">
             <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
               <div className="flex justify-center items-center bg-black rounded-full w-[50px] h-[50px]">
@@ -46,14 +60,18 @@ const MiniFooter = () => {
               </div>
             </div>
           </div>
-          <h1 className="font-bold text-xl">MONEY BACK GUARANTEE</h1>
-          <p className="text-sm">We return money within 30 days</p>
+          <h1 className="font-bold text-lg lg:text-xl">MONEY BACK GUARANTEE</h1>
+          <p className="text-sm text-gray-600">
+            We return money within 30 days
+          </p>
         </div>
       </div>
-      <div className="flex justify-end mr-32">
+
+      {/* Scroll to Top Button */}
+      <div className="flex justify-end mt-16">
         <div
           onClick={scrollToTop}
-          className="border bg-gray-200 rounded-full w-[40px] h-[40px] cursor-pointer flex justify-center items-center mt-16"
+          className="border bg-gray-200 rounded-full w-[40px] h-[40px] cursor-pointer flex justify-center items-center"
         >
           <UpArrow />
         </div>

@@ -14,19 +14,19 @@ const Account = () => {
         <Hero />
       </div>
 
-      <div className="pt-20 pl-36">
-        <div className="flex justify-between items-center w-[1200px]">
-          <p className="ml-10">
+      <div className="pt-20 pl-6 sm:pl-10 lg:pl-36">
+        <div className="flex flex-col sm:flex-row justify-between items-center w-full sm:w-[1200px]">
+          <p className="ml-0 sm:ml-10 text-center sm:text-left">
             <span className="text-gray-500">Home /</span>{" "}
             <span className="font-semibold">My Account</span>
           </p>
-          <p className="font-semibold">
+          <p className="font-semibold text-center sm:text-left">
             Welcome, <span className="text-[#db4444]">Betselot</span>!
           </p>
         </div>
       </div>
 
-      <div className="flex items-start justify-center mt-20 gap-36">
+      <div className="flex items-start justify-center mt-20 gap-36 flex-col lg:flex-row">
         <Left />
         <Right />
       </div>

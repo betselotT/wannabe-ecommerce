@@ -18,7 +18,6 @@ const Categories = () => {
     }
   };
 
-  // Function to scroll right
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
@@ -27,39 +26,50 @@ const Categories = () => {
       });
     }
   };
+
   return (
-    <div>
-      <div className="flex justify-start items-center gap-5">
+    <div className="px-4 sm:px-6 lg:px-12">
+      {/* Section Header */}
+      <div className="flex justify-start items-center gap-4 mb-6">
         <Image
           src="/images/rectangle.png"
           width={20}
           height={40}
-          alt="Picture of the home page"
+          alt="Rectangle decoration"
         />
-        <h1 className="text-[#db4444] font-semibold">Categories</h1>
+        <h1 className="text-[#db4444] font-semibold text-lg sm:text-xl">
+          Categories
+        </h1>
       </div>
-      <div className="flex justify-between items-center pt-5 pr-32">
-        <h1 className="text-3xl font-semibold">Browse By Category</h1>
+
+      {/* Browse By Category */}
+      <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-4 sm:gap-6">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
+          Browse By Category
+        </h1>
         <div className="flex justify-center items-center gap-2">
-          <div
-            className="border bg-gray-200 rounded-3xl p-2 cursor-pointer"
+          <button
+            className="border bg-gray-200 rounded-full p-2 sm:p-3"
+            aria-label="Scroll left"
             onClick={scrollLeft}
           >
             <LeftArrow />
-          </div>
-          <div
-            className="border bg-gray-200 rounded-3xl p-2 cursor-pointer"
+          </button>
+          <button
+            className="border bg-gray-200 rounded-full p-2 sm:p-3"
+            aria-label="Scroll right"
             onClick={scrollRight}
           >
             <RightArrow />
-          </div>
+          </button>
         </div>
       </div>
+
+      {/* Categories List */}
       <div className="pt-8">
         <div
           ref={scrollRef}
-          className="flex gap-12 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
-          style={{ scrollBehavior: "smooth" }}
+          className="flex gap-6 sm:gap-8 lg:gap-12 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
         >
           {categories.map((item, index) => (
             <Browse key={index} image={item.image} name={item.name} />

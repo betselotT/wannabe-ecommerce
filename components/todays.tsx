@@ -18,7 +18,6 @@ const Todays = () => {
     }
   };
 
-  // Function to scroll right
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
@@ -29,84 +28,71 @@ const Todays = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-start items-center gap-5">
+    <div className="px-4 lg:px-12">
+      {/* Section Header */}
+      <div className="flex justify-start items-center gap-3 mb-6">
         <Image
           src="/images/rectangle.png"
           width={20}
           height={40}
-          alt="Picture of the home page"
+          alt="Rectangle decoration"
         />
         <h1 className="text-[#db4444] font-semibold">Today&apos;s</h1>
       </div>
-      <div className="flex items-center gap-24 pt-5">
-        <h1 className="text-3xl font-semibold">Flash Sales</h1>
-        <div className="flex items-center gap-96">
-          <div>
-            <div className="flex justify-center items-center gap-5">
-              <div>
-                <p className="text-sm font-semibold">Days</p>
-                <div className="flex justify-center items-center gap-4">
-                  <p className="text-3xl font-semibold">03</p>
-                  <Image
-                    src="/images/semicolon.png"
-                    width={4}
-                    height={4}
-                    alt="Semicolon"
-                  />
+
+      {/* Flash Sales Section */}
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6">
+        {/* Title & Countdown */}
+        <div>
+          <h1 className="text-2xl lg:text-3xl font-semibold">Flash Sales</h1>
+          <div className="flex justify-start gap-4 pt-3">
+            {["Days", "Hours", "Minutes", "Seconds"].map((label, i) => (
+              <div key={i} className="text-center">
+                <p className="text-sm font-semibold">{label}</p>
+                <div className="flex items-center gap-1">
+                  <p className="text-2xl lg:text-3xl font-semibold">
+                    {
+                      i === 0 ? "03" : "23" // Example values; replace with actual countdown logic
+                    }
+                  </p>
+                  {i !== 3 && (
+                    <Image
+                      src="/images/semicolon.png"
+                      width={4}
+                      height={4}
+                      alt="Semicolon separator"
+                    />
+                  )}
                 </div>
               </div>
-              <div>
-                <p className="text-sm font-semibold">Hours</p>
-                <div className="flex justify-center items-center gap-4">
-                  <p className="text-3xl font-semibold">23</p>
-                  <Image
-                    src="/images/semicolon.png"
-                    width={4}
-                    height={4}
-                    alt="Semicolon"
-                  />
-                </div>
-              </div>
-              <div>
-                <p className="text-sm font-semibold">Minutes</p>
-                <div className="flex justify-center items-center gap-4">
-                  <p className="text-3xl font-semibold">19</p>
-                  <Image
-                    src="/images/semicolon.png"
-                    width={4}
-                    height={4}
-                    alt="Semicolon"
-                  />
-                </div>
-              </div>
-              <div>
-                <p className="text-sm font-semibold">Seconds</p>
-                <p className="text-3xl font-semibold">56</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center items-center gap-2 ml-52">
-            <div
-              className="border bg-gray-200 rounded-3xl p-2 cursor-pointer"
-              onClick={scrollLeft}
-            >
-              <LeftArrow />
-            </div>
-            <div
-              className="border bg-gray-200 rounded-3xl p-2 cursor-pointer"
-              onClick={scrollRight}
-            >
-              <RightArrow />
-            </div>
+            ))}
           </div>
         </div>
+
+        {/* Scroll Buttons */}
+        <div className="flex gap-2">
+          <button
+            className="border bg-gray-200 rounded-full p-2"
+            aria-label="Scroll left"
+            onClick={scrollLeft}
+          >
+            <LeftArrow />
+          </button>
+          <button
+            className="border bg-gray-200 rounded-full p-2"
+            aria-label="Scroll right"
+            onClick={scrollRight}
+          >
+            <RightArrow />
+          </button>
+        </div>
       </div>
-      <div className="pt-8">
+
+      {/* Flash Sales Items */}
+      <div className="pt-6">
         <div
           ref={scrollRef}
-          className="flex gap-12 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
-          style={{ scrollBehavior: "smooth" }}
+          className="flex gap-4 lg:gap-8 w-full overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar"
         >
           {sales.map((item, index) => (
             <FlashSales
@@ -121,8 +107,10 @@ const Todays = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-center pt-5">
-        <button className="bg-[#db4444] text-white w-[234px] h-[56px] rounded">
+
+      {/* View All Products */}
+      <div className="flex justify-center pt-6">
+        <button className="bg-[#db4444] text-white w-full max-w-[234px] h-[56px] rounded">
           View All Products
         </button>
       </div>

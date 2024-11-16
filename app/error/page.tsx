@@ -13,23 +13,24 @@ const Error = () => {
         <Hero />
       </div>
 
-      <div className="pt-20 pl-36">
+      <div className="pt-20 pl-4 sm:pl-36">
         <p>
           <span className="text-gray-500">Home /</span>{" "}
           <span className="font-semibold">404 Error</span>
         </p>
       </div>
 
-      <h1 className="text-8xl tracking-widest mt-32 text-center">
+      <h1 className="text-4xl sm:text-8xl tracking-widest mt-32 text-center">
         404 Not Found
       </h1>
-      <h1 className="mt-8 font-medium text-center">
-        Your visited page is not found. You may go back to home page.
+      <h1 className="mt-8 font-medium text-center text-lg sm:text-xl">
+        Your visited page is not found. You may go back to the home page.
       </h1>
+
       <div className="flex items-center justify-center mt-16">
         <Link
           href="/"
-          className="bg-[#db4444] text-white w-[215px] h-[56px] rounded flex items-center justify-center"
+          className="bg-[#db4444] text-white w-[215px] sm:w-[250px] h-[56px] rounded flex items-center justify-center text-center"
         >
           Back to Home Page
         </Link>

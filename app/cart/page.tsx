@@ -23,16 +23,22 @@ const Cart = () => {
       </div>
 
       {/* Table Section */}
-      <div className="ml-36 mt-20">
+      <div className="ml-36 mt-20 hidden sm:block">
         <Table />
       </div>
 
-      <div className="flex justify-between items-center w-[1170px] ml-36 mt-3">
+      <div className="justify-between items-center w-[1170px] ml-36 mt-3 hidden sm:flex">
+        {/* Return to Shop Button */}
         <div className="flex justify-end items-center pt-5">
           <button className="text-black w-[200px] h-[46px] border-2 border-gray-400 rounded">
             Return To Shop
           </button>
         </div>
+
+        {/* Space between buttons */}
+        <div className="w-5"></div>
+
+        {/* Update Cart Button */}
         <div className="flex justify-end items-center pt-5">
           <button className="text-black w-[200px] h-[46px] border-2 border-gray-400 rounded">
             Update Cart
@@ -41,7 +47,7 @@ const Cart = () => {
       </div>
 
       {/* Last Section */}
-      <div className="ml-36 mt-20">
+      <div className="mt-20 ml-0 sm:ml-36">
         <Last />
       </div>
 

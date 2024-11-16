@@ -15,14 +15,16 @@ const SignUp = () => {
         <Hero />
       </div>
 
-      <div className="flex items-center justify-start gap-40">
+      {/* Sign-Up Section */}
+      <div className="flex flex-col sm:flex-row items-center justify-start gap-10 sm:gap-40 px-4 sm:px-0">
         <Image
           src="/images/side-image.png"
           width={800}
           height={300}
           alt="Picture of the home page"
+          className="w-full sm:w-auto" // Ensures responsiveness for the image
         />
-        <div>
+        <div className="flex flex-col items-start">
           <h1 className="font-semibold text-3xl pb-2 tracking-wide">
             Create An Account
           </h1>
@@ -31,27 +33,27 @@ const SignUp = () => {
             <div className="flex flex-col gap-5">
               <input
                 type="text"
-                className="w-[300px] h-[50px]"
+                className="w-full sm:w-[300px] h-[50px] px-4 border border-gray-300 rounded"
                 placeholder="Name"
               />
               <input
                 type="email"
-                className="w-[300px] h-[50px]"
-                placeholder="Email or Phone Numebr"
+                className="w-full sm:w-[300px] h-[50px] px-4 border border-gray-300 rounded"
+                placeholder="Email or Phone Number"
               />
               <input
                 type="password"
-                className="w-[300pxpx] h-[50px]"
+                className="w-full sm:w-[300px] h-[50px] px-4 border border-gray-300 rounded"
                 placeholder="Password"
               />
             </div>
-            <div className="flex justify-end items-center pt-5">
-              <button className="bg-[#db4444] text-white w-[300px] h-[40px] rounded">
+            <div className="flex justify-end items-center pt-5 w-full sm:w-[300px]">
+              <button className="bg-[#db4444] text-white w-full sm:w-[300px] h-[40px] rounded">
                 Create Account
               </button>
             </div>
-            <div className="flex justify-end items-center pt-5">
-              <button className="w-[300px] h-[40px] border-3 rounded flex items-center justify-center gap-2">
+            <div className="flex justify-end items-center pt-5 w-full sm:w-[300px]">
+              <button className="w-full sm:w-[300px] h-[40px] border-3 rounded flex items-center justify-center gap-2">
                 <FcGoogle className="w-[24px] h-[24px]" /> Sign up with Google
               </button>
             </div>

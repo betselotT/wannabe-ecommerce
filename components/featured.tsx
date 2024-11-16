@@ -3,70 +3,90 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div>
-      <div className="flex justify-start items-center gap-5">
+    <div className="max-w-[1200px] mx-auto px-4">
+      {/* Header Section */}
+      <div className="flex items-center gap-5">
         <Image
           src="/images/rectangle.png"
           width={20}
           height={40}
-          alt="Picture of the home page"
+          alt="Decoration for Featured Section"
         />
         <h1 className="text-[#db4444] font-semibold">Featured</h1>
       </div>
-      <h1 className="text-3xl font-semibold pt-5">New Arrival</h1>
-      <div className="pt-10 flex gap-5">
-        <div className="bg-black w-[570px] h-[590px] flex items-center justify-center">
+
+      {/* Title */}
+      <h1 className="text-3xl sm:text-4xl font-semibold pt-5">New Arrival</h1>
+
+      {/* Featured Products */}
+      <div className="pt-10 flex flex-wrap lg:flex-nowrap gap-5">
+        {/* Main Item */}
+        <div className="bg-black w-full lg:w-[570px] h-[590px] flex items-center justify-center">
           <div
-            className="w-[510px] h-[510px] bg-center bg-no-repeat bg-[length:90%] flex flex-col items-start gap-3 justify-end text-white"
+            className="w-[90%] h-[90%] bg-center bg-no-repeat flex flex-col items-start gap-3 justify-end text-white p-6"
             style={{ backgroundImage: "url('/images/playstation.png')" }}
+            aria-label="PlayStation 5"
           >
-            <p className="font-medium text-xl">PlayStation 5</p>
-            <p className="text-sm w-72 font-light">
+            <p className="font-medium text-xl sm:text-2xl">PlayStation 5</p>
+            <p className="text-sm sm:text-base font-light">
               Black and White version of the PS5 coming out on sale.
             </p>
-            <button className="font-medium border-b border-white border-transparent pb-0.5">
+            <button className="font-medium border-b border-white pb-0.5">
               Shop Now
             </button>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-5">
-          <div className="bg-black w-[570px] h-[284px] flex items-center justify-center">
+
+        {/* Secondary Items */}
+        <div className="flex flex-col gap-5 flex-1">
+          <div className="bg-black w-full lg:w-[570px] h-[284px] flex items-center justify-center">
             <div
-              className="w-[570px] h-[284px] bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-3 justify-end text-white ml-6 pb-6"
+              className="w-full h-full bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-3 justify-end text-white p-6"
               style={{ backgroundImage: "url('/images/women.png')" }}
+              aria-label="Women's Collections"
             >
-              <p className="font-medium text-xl">Women&apos;s Collections</p>
-              <p className="text-sm w-60 font-light">
+              <p className="font-medium text-xl sm:text-2xl">
+                Women&apos;s Collections
+              </p>
+              <p className="text-sm sm:text-base font-light">
                 Featured woman collections that give you another vibe.
               </p>
-              <button className="font-medium border-b border-white border-transparent pb-0.5">
+              <button className="font-medium border-b border-white pb-0.5">
                 Shop Now
               </button>
             </div>
           </div>
-          <div className="flex justify-center items-center gap-5">
-            <div className="bg-black w-[274px] h-[284px] flex items-center justify-center">
+
+          <div className="flex flex-wrap lg:flex-nowrap gap-5">
+            {/* Item 1 */}
+            <div className="bg-black w-[45%] lg:w-[274px] h-[200px] lg:h-[284px] flex items-center justify-center">
               <div
-                className="w-[270px] h-[284px] bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-2 justify-end text-white pl-5 pb-6"
+                className="w-full h-full bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-2 justify-end text-white p-5"
                 style={{ backgroundImage: "url('/images/speakers.png')" }}
+                aria-label="Speakers"
               >
-                <p className="font-medium text-xl">Speakers</p>
-                <p className="text-sm w-72 font-light">
+                <p className="font-medium text-lg sm:text-xl">Speakers</p>
+                <p className="text-sm sm:text-base font-light">
                   Amazon wireless speakers
                 </p>
-                <button className="font-medium border-b border-white border-transparent pb-0.5">
+                <button className="font-medium border-b border-white pb-0.5">
                   Shop Now
                 </button>
               </div>
             </div>
-            <div className="bg-black w-[274px] h-[284px] flex items-center justify-center">
+
+            {/* Item 2 */}
+            <div className="bg-black w-[45%] lg:w-[274px] h-[200px] lg:h-[284px] flex items-center justify-center">
               <div
-                className="w-[270px] h-[284px] bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-2 justify-end text-white pl-5 pb-6"
+                className="w-full h-full bg-center bg-no-repeat bg-[length:80%] flex flex-col items-start gap-2 justify-end text-white p-5"
                 style={{ backgroundImage: "url('/images/purfume.png')" }}
+                aria-label="Perfume"
               >
-                <p className="font-medium text-xl">Purfume</p>
-                <p className="text-sm w-72 font-light">GUCCI INTENSE OUD EDP</p>
-                <button className="font-medium border-b border-white border-transparent pb-0.5">
+                <p className="font-medium text-lg sm:text-xl">Perfume</p>
+                <p className="text-sm sm:text-base font-light">
+                  GUCCI INTENSE OUD EDP
+                </p>
+                <button className="font-medium border-b border-white pb-0.5">
                   Shop Now
                 </button>
               </div>

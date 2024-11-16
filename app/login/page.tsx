@@ -13,14 +13,16 @@ const LogIn = () => {
         <Hero />
       </div>
 
-      <div className="flex items-center justify-start gap-40">
+      {/* Login Section */}
+      <div className="flex flex-col sm:flex-row items-center justify-start gap-10 sm:gap-40 px-4 sm:px-0">
         <Image
           src="/images/side-image.png"
           width={800}
           height={300}
           alt="Picture of the home page"
+          className="w-full sm:w-auto" // Ensures responsiveness for the image
         />
-        <div>
+        <div className="flex flex-col items-start">
           <h1 className="font-semibold text-3xl pb-2 tracking-wide">
             Log In To Exclusive
           </h1>
@@ -29,20 +31,20 @@ const LogIn = () => {
             <div className="flex flex-col gap-5">
               <input
                 type="email"
-                className="w-[350px] h-[50px]"
-                placeholder="Email or Phone Numebr"
+                className="w-full sm:w-[350px] h-[50px] px-4 border border-gray-300 rounded"
+                placeholder="Email or Phone Number"
               />
               <input
                 type="password"
-                className="w-[350pxpx] h-[50px]"
+                className="w-full sm:w-[350px] h-[50px] px-4 border border-gray-300 rounded"
                 placeholder="Password"
               />
             </div>
-            <div className="flex justify-between items-center pt-5 w-[350px]">
-              <button className="bg-[#db4444] text-white w-[100px] h-[40px] rounded">
+            <div className="flex flex-col sm:flex-row justify-between items-center pt-5 w-full sm:w-[350px]">
+              <button className="bg-[#db4444] text-white w-full sm:w-[100px] h-[40px] rounded mb-3 sm:mb-0">
                 Log In
               </button>
-              <button className="w-[200px] h-[40px] text-[#db4444]">
+              <button className="w-full sm:w-[200px] h-[40px] text-[#db4444] text-center">
                 Forgot Password?
               </button>
             </div>

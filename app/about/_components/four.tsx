@@ -7,8 +7,8 @@ import React from "react";
 const Four = () => {
   return (
     <div>
-      <div className="flex justify-center items-center gap-20">
-        <div className="border-3 w-[220px] h-[180px] flex items-center justify-center">
+      <div className="flex flex-wrap justify-center items-center gap-6 md:gap-20">
+        <div className="border-3 w-full sm:w-[220px] h-[180px] flex items-center justify-center">
           <div className="flex flex-col gap-3 items-center">
             <div className="flex justify-center items-center">
               <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
@@ -18,10 +18,10 @@ const Four = () => {
               </div>
             </div>
             <h1 className="font-bold text-xl">10.5k</h1>
-            <p className="text-sm">Sallers active our site</p>
+            <p className="text-sm">Sellers active on our site</p>
           </div>
         </div>
-        <div className="border-3 w-[220px] h-[180px] flex items-center justify-center">
+        <div className="border-3 w-full sm:w-[220px] h-[180px] flex items-center justify-center">
           <div className="flex flex-col gap-3 items-center">
             <div className="flex justify-center items-center">
               <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
@@ -31,10 +31,10 @@ const Four = () => {
               </div>
             </div>
             <h1 className="font-bold text-xl">33k</h1>
-            <p className="text-sm">Mopnthly Produduct Sale</p>
+            <p className="text-sm">Monthly Product Sale</p>
           </div>
         </div>
-        <div className="border-3 w-[220px] h-[180px] flex items-center justify-center">
+        <div className="border-3 w-full sm:w-[220px] h-[180px] flex items-center justify-center">
           <div className="flex flex-col gap-3 items-center">
             <div className="flex justify-center items-center">
               <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
@@ -44,10 +44,10 @@ const Four = () => {
               </div>
             </div>
             <h1 className="font-bold text-xl">45.5k</h1>
-            <p className="text-sm">Customer active in our site</p>
+            <p className="text-sm">Customers active on our site</p>
           </div>
         </div>
-        <div className="border-3 w-[220px] h-[180px] flex items-center justify-center">
+        <div className="border-3 w-full sm:w-[220px] h-[180px] flex items-center justify-center">
           <div className="flex flex-col gap-3 items-center">
             <div className="flex justify-center items-center">
               <div className="bg-[#c1c0c1] w-[70px] h-[70px] rounded-full flex justify-center items-center">
@@ -57,7 +57,7 @@ const Four = () => {
               </div>
             </div>
             <h1 className="font-bold text-xl">25k</h1>
-            <p className="text-sm">Annual gross sale in our site</p>
+            <p className="text-sm">Annual gross sales on our site</p>
           </div>
         </div>
       </div>
