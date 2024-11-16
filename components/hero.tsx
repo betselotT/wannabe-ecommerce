@@ -18,7 +18,9 @@ const Hero = () => {
       {/* Navbar */}
       <div className="flex justify-between items-center px-4 py-2 bg-white">
         {/* Left section */}
-        <h1 className="text-2xl font-bold ml-0 sm:ml-10">Exclusive</h1>
+        <a href="/" className="text-2xl font-bold ml-0 sm:ml-10">
+          Exclusive
+        </a>
 
         {/* Right section (Desktop/Tablet Navbar) */}
         <div className="hidden lg:flex justify-center items-center gap-10">
