@@ -11,6 +11,7 @@ import Featured from "@/components/featured";
 import MiniFooter from "@/components/mini-footer";
 import Footer from "@/components/footer";
 import Todays from "@/components/todays";
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (

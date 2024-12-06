@@ -61,7 +61,7 @@ const SignUp = () => {
           <p className="text-sm mt-5 pl-5 flex">
             Already have an account?{" "}
             <span>
-              <Link href="/login">
+              <Link href="/sign-in">
                 <p className="border-b-2 pb-0.5 ml-2 border-black">Log In</p>
               </Link>
             </span>
