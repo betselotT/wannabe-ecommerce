@@ -4,6 +4,7 @@ import Heart from "@/components/icons/heart";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import ProfileDropdown from "./profile-dropdown";
+import Search from "./icons/search";
 
 const Hero = () => {
   const path = usePathname();
@@ -65,6 +66,9 @@ const Hero = () => {
             placeholder="What are you looking for?"
             className="px-2"
           />
+          <div className="cursor-pointer">
+            <Search />
+          </div>
           <a
             href="/wishlist"
             className={`border-b-2 ${
