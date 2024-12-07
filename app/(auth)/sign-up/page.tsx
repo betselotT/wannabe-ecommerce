@@ -25,12 +25,8 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
-const formSchema = z.object({
-  name: z.string().min(2).max(50),
-  email: z.string().min(2).max(50),
-  password: z.string().min(2).max(50),
-});
+import { formSchema } from "@/components/lib/auth-schema";
+import { FcGoogle } from "react-icons/fc";
 
 export default function SignUp() {
   // 1. Define your form.
@@ -125,9 +121,12 @@ export default function SignUp() {
                 />
                 <Button
                   type="submit"
-                  className="bg-[#db4444] text-white w-full sm:w-[100px] h-[40px] rounded mb-3 sm:mb-0"
+                  className="bg-[#db4444] text-white w-full sm:w-[300px] h-[40px] rounded"
                 >
-                  Sign In
+                  Create Account
+                </Button>
+                <Button className="w-full sm:w-[300px] h-[40px] border-3 rounded flex items-center justify-center gap-2">
+                  <FcGoogle className="w-[24px] h-[24px]" /> Sign up with Google
                 </Button>
               </form>
             </Form>
